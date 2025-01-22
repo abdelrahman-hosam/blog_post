@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./blog_post.css">
+    <title>blog POST</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Blog POST</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="/homepage">blog post</a>
+    </nav>
+    <main id="main">
+        <div class="create_blog" id="create_blog">
+            <div class="searchBar">
+                <input type="text" id="search-criteria" placeholder="what do you want to search for">
+                <button onclick="search()">search</button>
+            </div>
+            <button onclick="create_post()">create post</button>
+            <div class="blog" id="blog">
+                <input type="text" placeholder="blog post header" id="blogHeader">
+                <textarea name="content" class="content" placeholder="blog content" id="blogContent"></textarea>
+                <input type="text" placeholder="blog post tags(leave space between each tag)" id="blogTags">
+                <button onclick="cancel()">cancel</button>
+                <button onclick="submit()">submit</button>
+            </div>
+        </div>
+    </main>
+    <script src="./blog_post.js"></script>
+</body>
+</html>

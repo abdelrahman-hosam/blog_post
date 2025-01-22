@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b2acbd;
+}
+header{
+    background-color: #7c7698;
+    padding: 20px;
+}
+header h1{
+    color: #310853;
+    font-size: 26px;
+}
+main{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+main button{
+    outline: none;
+    border: none;
+    color:#310853;
+    border-radius: 8px;
+    padding: 3px;
+    cursor: pointer;
+}
+#blog{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+}
+input ,textarea{
+    border: none;
+    outline: none;
+    width: 50%;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    background-color: #7c7698;
+}
+input:focus, textarea:focus{
+    border-bottom: 1px solid black;
+}
+ textarea{
+    min-height: 50px;
+    resize: none;
+    overflow: hidden;
+}
+input::placeholder, textarea::placeholder{
+    color: rgb(50, 46, 46);
+}
+main .post{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    gap: 15px;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 13px;
+}
+.create_blog{
+    width: 80%;
+}
+.searchBar{
+    margin-bottom: 30px;
+}
